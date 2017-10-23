@@ -1,0 +1,23 @@
+{
+    "pages": [
+        "page/index",
+        "page/search/index",
+        "page/book/index",
+        "page/detail/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小猪慢弹",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": false
+}

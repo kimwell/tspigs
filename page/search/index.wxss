@@ -1,0 +1,133 @@
+/* page/search/index.wxss */
+.search{
+    position: relative;
+    display: flex;
+    padding: 15rpx 25rpx;
+    background-color: #86af49;
+    color: #fff
+}
+.searchForm{
+    background-color: #fff;
+    width: 100%;
+    flex: 1;
+    height: 64rpx;
+    line-height: 64rpx;
+    border-radius: 32rpx;
+}
+.searchForm input{
+    padding: 0 10rpx;
+    color: #333;
+    padding-left: 60rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    font-size: 28rpx;
+    padding-right: 120rpx;
+}
+.search-icon{
+    position: absolute;
+    top: 27rpx;
+    left: 40rpx;
+    z-index: 999;
+}
+.clearTxt{
+    position: absolute;
+    top: 15rpx;
+    right: 120rpx;
+    z-index: 999;
+}
+.clearImg{
+    width: 28px;
+    height: 30px;
+}
+.quit{
+    font-size: 28rpx;
+    margin-left: 20rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+}
+.bookList,.musicList{
+    padding: 10rpx 30rpx;
+}
+.book{
+    display: flex;
+    position: relative;
+    height: 55px;
+}
+.bookImg{
+    width: 100rpx;
+}
+.bookThumb{
+    width: 42px;
+    height: 55px;
+    border-radius: 10rpx;
+}
+.bookName{
+    flex: 1;
+    font-size: 28rpx;
+    color: rgb(108,108,108);
+    padding-top:20rpx;
+    padding-left: 15rpx;
+}
+.music{
+    font-size: 28rpx;
+    color: rgb(155,155,155); 
+    position: relative;
+}
+.book::after,.music::after{
+    content: '';
+    position: absolute;
+    top:calc(50% - 2px);
+    right: 20rpx;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #86af49;
+    transform:rotate(45deg);
+    border-bottom-color: transparent;
+    border-left-color: transparent 
+}
+.resultTitle{
+    position: relative;
+    color: rgb(155, 155, 155);
+    font-size: 26rpx;
+    padding: 10rpx 30rpx;
+    padding-bottom: 0;
+}
+.resultTitle::before{
+    content: '';
+    position: absolute;
+    left: 15rpx;
+    top: calc(50% - 2px);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 1px solid rgba(155, 155, 155,.36)
+}
+.musicBookName{
+    font-size: 32rpx;
+    color: rgb(74,74,74);   
+}
+.musicIcon{
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 15rpx;
+}
+.bookList:first-child,.musicList:first-child{
+    padding-top: 0;
+}
+.noResult{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.noResult image{
+    max-width: 100%;
+    width: 61px;
+    height: 44px;
+}
+.noResult .txt{
+    font-size: 28rpx;
+    color:rgb(155, 155, 155);
+}

@@ -1,0 +1,30 @@
+<view class="search">
+    <image class="search-icon" src="../../images/search.png"></image>
+    <form class="searchForm">
+        <input class="searchTxt" name="search" value="{{searchVue}}" bindinput="bindInput" bindconfirm="bindConfirm"  confirm-type ="search" type="text" focus ="{{focus}}" placeholder="曲目或书目"/>
+    </form>
+    <view class="clearTxt" bindtap="clearTxt"><image class="clearImg" src="../../images/clear.png"></image> </view>
+    <text class="quit" bindtap="history">取消</text>
+</view>
+<view class="searchResult" wx:if="{{bookResult}}">
+    <view class="resultTitle">书目</view>
+    <view class="bookList" wx:for="{{bookList}}" data-id="{{item.bookId}}" data-title="{{item.name}}" data-cover = "{{item.cover}}" bindtap="bookDetail">
+        <view class="book">
+            <view class="bookImg"><image class="bookThumb" src="{{item.cover}}"></image></view>
+            <view class="bookName">{{item.name}}</view>
+        </view>
+    </view>
+</view>
+<view class="searchResult" wx:if="{{musicResult}}">
+    <view class="resultTitle">曲目</view>
+    <view class="musicList" wx:for="{{musicList}}" data-id="{{item.musicId}}" data-pid="{{item.bookId}}" data-src="{{item.video}}" data-title="{{item.musicName}}" bindtap="musicDetail">
+        <view class="music">
+            <view class="musicBookName"><image class="musicIcon" src="../../images/music-icon.png"></image>{{item.musicName}}</view>
+            <view class="musicName">{{item.catalogTitle}}</view>
+        </view>
+    </view>
+</view>
+<view class="noResult" wx:if="{{noResult}}">
+    <view class="classname"><image src="../../images/no-results.png"></image></view>
+    <text class="txt">没有任何结果...</text>
+</view>

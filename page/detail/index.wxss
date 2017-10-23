@@ -1,0 +1,49 @@
+.videoWrap{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+}
+.viewList {
+    padding-top: 260px;
+    height: 100%;
+}
+.videoName{
+    height: 30px;
+    line-height: 30px;
+    color:rgb(155, 155, 155);
+    padding:15rpx 30rpx;
+    font-size:26rpx;
+}
+.videoWrap video{
+    width: 100%;
+}
+.videoName{
+    padding: 0 30rpx;
+}
+.videoList{
+    position: relative;
+    color: rgb(108, 108, 108);
+    font-size: 32rpx;
+    margin-bottom: 25rpx;
+    padding-left: 30rpx;
+    padding-right: 60rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.videoList::after{
+    content: '';
+    position: absolute;
+    top:calc(50% - 4px);
+    right: 30rpx;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #86af49;
+    transform:rotate(45deg);
+    border-bottom-color: transparent;
+    border-left-color: transparent 
+}

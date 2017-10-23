@@ -1,0 +1,15 @@
+<!--<view class="showLoading" wx:if="{{showLoading}}">
+<text>努力加载中...</text>
+</view>-->
+<view class="videoWrap">
+    <video id="video" controls="controls" src="{{src}}" objectFit="cover" autoplay="true" poster="../../images/video.png"></video>
+    <view class="videoName">{{videoName}}</view>
+</view>
+<scroll-view class="viewList" scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="getMore" bindscroll="scroll">
+    <view class="videoList" bindtap="playVideo" wx:for="{{list}}" data-src="{{item.video}}" data-title="{{item.musicName}}">
+        <image class="listIcon" src="../../images/music-icon.png"></image><text>{{item.musicName}}</text>
+    </view>
+<view class="loading-view" wx:if="{{showLoading}}">
+<image class="loading" src="../../images/loading.gif"></image> 努力加载中...
+</view>
+</scroll-view>

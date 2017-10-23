@@ -1,0 +1,13 @@
+<!-- <view class="showLoading" wx:if="{{showLoading}}">
+<text>努力加载中...</text>
+</view> -->
+<view class="searchBar">
+    <view class="search" bindtap="goSearch"><image class="search-icon" src="../images/search.png"></image><text>搜索</text></view>
+</view>
+<view class="bookList">
+    <view class="bookAblum" bindtap="detailView" data-album="{{src}}{{item.cover}}" data-id="{{item.bookId}}" data-title="{{item.name}}" wx:for="{{books}}">
+        <view class="list">
+            <image src="{{src}}{{item.cover}}" mode="widthFix"></image>
+        </view>
+    </view>
+</view>

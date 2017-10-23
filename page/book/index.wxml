@@ -1,0 +1,18 @@
+<!--<view class="showLoading" wx:if="{{showLoading}}">
+<text>努力加载中...</text>
+</view>-->
+<scroll-view class="viewList" scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="getMore" bindscroll="scroll">
+<view class="bookwrap" >
+<view class="bookBg" style="background:url({{album}}) no-repeat"></view>
+   <image class="bookImg" src="{{album}}"></image>
+</view>
+<view class="bookName">{{title}}</view>
+<view class="bookList">
+    <view class="list" wx:for="{{list}}" bindtap="videoView" data-id="{{item.musicId}}" data-pid="{{item.bookId}}" data-src="{{item.video}}" data-title="{{item.musicName}}">
+        <image class="listIcon" src="../../images/music-icon.png"></image> {{item.musicName}}
+    </view>
+</view>
+<view class="loading-view" wx:if="{{showLoading}}">
+  <image class="loading" src="../../images/loading.gif"></image> 努力加载中...
+</view>
+</scroll-view>

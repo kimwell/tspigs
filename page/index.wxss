@@ -1,0 +1,39 @@
+/* page/index.wxss */
+.searchBar{
+    padding: 15rpx 25rpx;
+    background-color: #86af49;
+}
+.search{
+    height: 64rpx;
+    line-height: 64rpx;
+    border-radius: 32rpx;
+    text-align: center;
+    color: #cdcdcd;
+    background: #fff;
+}
+.search text{
+    font-size: 24rpx;
+}
+
+.bookList{
+    padding: 0 15rpx;
+    padding-top: 20rpx;
+}
+.bookAblum{
+    float: left;
+    width: 33.33%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10rpx;
+    margin-bottom: 20rpx;
+}
+.bookAblum .list{
+    height: 300rpx;
+}
+.bookAblum .list image{
+    max-width: 100%;
+    height: 300rpx;
+    border-radius: 10rpx;
+}
