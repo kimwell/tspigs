@@ -1,7 +1,7 @@
 //正式接口地址
-var HOST_ROOT = 'https://m.tspig.com/v1.1/phone/common/';
+var HOST_ROOT = 'https://m.XXXX.com/v1.1/phone/common/';
 //测试接口地址
-// var HOST_ROOT = 'http://tspig.upnovas.cn/v1.1/phone/common/'
+// var HOST_ROOT = 'http://tspig.XXXX.cn/v1.1/phone/common/'
 
 var CONFIG_INTERFACE = {
     interface: {
